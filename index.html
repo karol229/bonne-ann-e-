@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b25">
+  <meta name="description" content="Une belle surprise pour célébrer la nouvelle année !">
+  <title>Une surprise pour toi 🎆</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="stars"></div>
+  <div id="confetti-container"></div>
+
+  <main class="container">
+
+    <div class="badge">✨ ÉDITION SPÉCIALE NOUVEL AN ✨</div>
+
+    <section id="welcome" class="screen">
+      <div class="firework">🎆</div>
+
+      <h1>Une nouvelle année,<br>une belle surprise !</h1>
+
+      <p class="subtitle">
+        Une petite attention t'attend.
+        Découvre ton message personnalisé.
+      </p>
+
+      <form id="nameForm">
+
+        <label for="prenom">Ton prénom</label>
+        <input
+          type="text"
+          id="prenom"
+          placeholder="Entre ton prénom"
+          required
+          maxlength="40"
+        >
+
+        <label for="nom">Ton nom</label>
+        <input
+          type="text"
+          id="nom"
+          placeholder="Entre ton nom"
+          required
+          maxlength="40"
+        >
+
+        <button type="submit" class="main-button">
+          Découvrir mes vœux ✨
+        </button>
+
+      </form>
+    </section>
+
+    <section id="greeting" class="screen hidden">
+
+      <div class="firework">🎉</div>
+
+      <p class="small-title">UN MESSAGE SPÉCIAL POUR</p>
+
+      <h1 id="recipientName">Toi !</h1>
+
+      <div class="year" id="yearDisplay">2027</div>
+
+      <h2>Bonne et heureuse année !</h2>
+
+      <p class="message" id="wishMessage">
+        Que cette nouvelle année t'apporte
+        le bonheur, la santé, la réussite,
+        la paix et de merveilleuses opportunités.
+        Que chacun de tes rêves trouve son chemin
+        vers la réalisation.
+      </p>
+
+      <p class="signature">
+        Avec tous mes meilleurs vœux ❤️
+      </p>
+
+      <div class="actions">
+
+        <button id="shareCustom" class="main-button">
+          💌 Envoyer ces vœux à quelqu'un
+        </button>
+
+        <button id="shareGeneral" class="secondary-button">
+          🔗 Partager le site
+        </button>
+
+        <button id="copyCustom" class="secondary-button">
+          📋 Copier le lien personnalisé
+        </button>
+
+        <button id="restart" class="text-button">
+          Recommencer
+        </button>
+
+      </div>
+
+    </section>
+
+    <footer>
+      <p>Fait avec ❤️ pour célébrer la nouvelle année.</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
